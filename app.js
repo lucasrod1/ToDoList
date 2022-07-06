@@ -34,12 +34,12 @@ function addTodo(event){
     saveLocalTodos(todoInput.value);
     //Check mark button
     const completedButton = document.createElement("button");
-    completedButton.innerHTML = "<i class="fas fa-check"></i>";
+    completedButton.innerHTML = '<i class="fas fa-check"></i>';
     completedButton.classList.add("complete-btn");
     todoButton.appendChild(completedButton);
     //Check trash button
     const trashButton = document.createElement("button");
-    trashButton.innerHTML = "<i class="fas fa-trash"></i>";
+    trashButton.innerHTML = '<i class="fas fa-trash"></i>';
     trashButton.classList.add("trash-btn");
     todoDiv.appendChild(trashButton);
     //Append to list
@@ -123,12 +123,12 @@ function getTodos() {
         todoDiv.appendChild(newTodo);
         // check mark button
         const completedButton = document.createElement("button");
-        completedButton.innerHTML = "<i class="fas fa-check"></i>";
+        completedButton.innerHTML = '<i class="fas fa-check"></i>';
         completedButton.classList.add("complete-btn");
         todoDiv.appendChild(completedButton);
         // check trash button
         const trashButton = document.createElement("button");
-        trashButton.innerHTML = "<i class="fas fa-trash"></i>";
+        trashButton.innerHTML = '<i class="fas fa-trash"></i>';
         trashButton.classList.add("trash-btn");
         todoDiv.appendChild(trashButton);
         // append to list
