@@ -6,15 +6,21 @@
 }
 
 body {
-  background-color: #594f2e;
-  background-image: linear-gradient(315deg, #594f2e 0%, #7a6d40 74%);
+  background-color: #ebebeb;
+  background-image: linear-gradient(315deg, #ebebeb 0%, #d3d3d3 74%);
   color: white;
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Roboto', sans-serif;
   min-height: 100vh;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+h1{
+  display: flex;
+  background-color: rgb(187, 187, 187);
+  border-radius: 10px;
+  color: rgb(67, 66, 66);
 }
 header img {
   width: 50px;
@@ -25,13 +31,11 @@ header img {
 }
 .container {
   width: 50%;
-  background-color: rgb(46, 41, 41);
+  background-color: #c6c1c1;
   min-height: 70vh;
   border-radius: 4px;
   padding-bottom: 3.5rem;
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.51),
-    -10px -10px 20px rgba(0, 0, 0, 0.275),
-    inset 5px 5px 15px rgba(63, 63, 63, 0.397);
+  box-shadow: 0px 0px 10px rgb(100,100,100);
 }
 
 header {
@@ -63,7 +67,7 @@ form input {
 
 form button {
   color: white;
-  background-color: #e3d159;
+  background-color: #1259c3;
   cursor: pointer;
   transition: all 0.3s ease;
   width: 6%;
@@ -72,8 +76,10 @@ form button {
 }
 
 form button:hover {
-  background-image: linear-gradient(315deg, #e3d159 0%, #c9b84e 74%);
-  color: white;
+  background-image: linear-gradient(315deg, #1259c3 0%, #0022AA 74%);
+  color: #1259c3;
+  background: white;
+  border-left: 1.3px solid rgba(0, 0, 0, 0.364);
 }
 
 .todo-container {
@@ -85,7 +91,7 @@ form button:hover {
 .todo-list {
   min-width: 60%;
   list-style: none;
-  font-family: 'Roboto Slab', serif !important;
+  font-family: 'Roboto', sans-serif !important;
 }
 
 .todo {
@@ -114,14 +120,22 @@ form button:hover {
 }
 
 .complete-btn {
-  background-color: #7bfe8a;
-  background: linear-gradient(#7bfe8a , #57fe41);
+  background-color: #56fb69;
+  background: linear-gradient(#56fb69 , #4df837);
   font-size: 22px;
   color: white;
 }
+.complete-btn:hover {
+  background: #3cce29;
+  color: white;
+}
 .trash-btn {
-  background-color: #e3d159;
+  background-color: #ff3939;
   font-size: 22px;
+  color: white;
+}
+.trash-btn:hover {
+  background: #ab1e1e;
   color: white;
 }
 .todo-item {
@@ -169,7 +183,7 @@ select {
 .select::after {
   content: "\25BC";
   position: absolute;
-  background: #e3d159;
+  background: #1259c3;
   top: 0;
   right: 0;
   pointer-events: none;
@@ -179,6 +193,6 @@ select {
 
 .select:hover::after {
     background: white;
-    color: #e3d159;
+    color: #1259c3;
     border-left: 1.3px solid rgba(0, 0, 0, 0.364);
 }
