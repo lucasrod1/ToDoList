@@ -6,17 +6,15 @@
 }
 
 body {
-  background-color: #fe7bb0;
-  background-image: linear-gradient(315deg, #fe7bb0 0%, #ff748b 74%);
+  background-color: #594f2e;
+  background-image: linear-gradient(315deg, #594f2e 0%, #7a6d40 74%);
   color: white;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Roboto Slab', serif;
   min-height: 100vh;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  /* font-family: 'Poppins', sans-serif !important; */
-  /* font-family: 'Roboto', sans-serif !important; */
 }
 header img {
   width: 50px;
@@ -38,7 +36,6 @@ header img {
 
 header {
   font-size: 1.2rem;
-  font-family: cursive;
 }
 
 header,
@@ -66,7 +63,7 @@ form input {
 
 form button {
   color: white;
-  background-color: #fe7bb0;
+  background-color: #e3d159;
   cursor: pointer;
   transition: all 0.3s ease;
   width: 6%;
@@ -75,7 +72,7 @@ form button {
 }
 
 form button:hover {
-  background-image: linear-gradient(315deg, #fe7bb0 0%, #ff748b 74%);
+  background-image: linear-gradient(315deg, #e3d159 0%, #c9b84e 74%);
   color: white;
 }
 
@@ -88,7 +85,7 @@ form button:hover {
 .todo-list {
   min-width: 60%;
   list-style: none;
-  font-family: "Roboto", sans-serif !important;
+  font-family: 'Roboto Slab', serif !important;
 }
 
 .todo {
@@ -123,7 +120,7 @@ form button:hover {
   color: white;
 }
 .trash-btn {
-  background-color: #fe7bb0;
+  background-color: #e3d159;
   font-size: 22px;
   color: white;
 }
@@ -161,7 +158,7 @@ select {
 }
 
 select {
-  color: #fe7bb0;
+  color: #322e12;
   width: 10rem;
   cursor: pointer;
   padding: 0.75rem;
@@ -172,7 +169,7 @@ select {
 .select::after {
   content: "\25BC";
   position: absolute;
-  background: #fe7bb0;
+  background: #e3d159;
   top: 0;
   right: 0;
   pointer-events: none;
@@ -182,6 +179,6 @@ select {
 
 .select:hover::after {
     background: white;
-    color: #fe7bb0;
+    color: #e3d159;
     border-left: 1.3px solid rgba(0, 0, 0, 0.364);
 }
